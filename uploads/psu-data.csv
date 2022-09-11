@@ -1,0 +1,62 @@
+Case No. ,San Carlos,Age ,Age Group,Sex,Nature of Work,Address(Municipal Level),Employment Status ,Commorbidity,CoViD Status,Status of Vaccination,Possible Source of Covid ,Date Confirmed,Date Recovered,Deceased,Status 
+1,Lingayen,56,55-59,Female,Teaching,Lingayen,Permanent,Yes,Symptomatic,Vaccinated(1st Dose),Work,9/2/2021,9/16/2021,N/A,Recovered
+2,Lingayen,49,45-49,Female,Teaching,Binmaley,Permanent,Yes,Symptomatic,Vaccinated(Fully),Unknown,9/4/2021,Expired-9/4/2021,Yes,Deceased
+3,Lingayen,42,40-44,Male,Teaching,Dagupan,Permanent,Yes,Symptomatic,Unvaccinated,Unknown,8/22/2021,Expired-8/22/2021,Yes,Deceased
+4,Lingayen,49,45-49,Male,Teaching,Aguilar,Permanent,No,Symptomatic,Unvaccinated,Home,9/2/2021,on going quarantine,N/A,Active
+5,Alaminos,38,35-39,Female,Teaching,Burgos,Permanent,No,Symptomatic,Unvaccinated,Unknown,6/13/2021,July 2021,N/A,Recovered
+6,Alaminos,29,25-29,Male,Teaching,Binmaley,Temporary,No,Symptomatic,Vaccinated(1st Dose),Unknown,6/18/2021,July 2021,N/A,Recovered
+7,Alaminos,31,30-34,Male,Teaching,Dagupan,Permanent,No,Symptomatic,Unvaccinated,Unknown,6/20/2021,July 2021,N/A,Recovered
+8,Lingayen,52,50-54,Male,Non-teaching,Bayambang,Permanent,Yes,Symptomatic,Vaccinated(Fully),Home,8/2/2021,"August 30, 2021",N/A,Recovered
+9,Lingayen,25,25-29,Male,Non-teaching,Lingayen,Casual,No,Asymptomatic,Unvaccinated,Home,1/9/2021,"January 23, 2021",N/A,Recovered
+10,Lingayen,57,55-59,Female,Non-teaching,Lingayen,Permanent,Yes,Asymptomatic,Vaccinated(Fully),Unknown,5/21/2021,"June 8, 2021",N/A,Recovered
+11,Lingayen,29,25-29,Male,Non-teaching,Lingayen,Permanent,No,Asymptomatic,Vaccinated(1st Dose),Work,5/27/2021,"June 18, 2021",N/A,Recovered
+12,Lingayen,23,20-24,Male,Non-teaching,Calasiao,Casual,No,Symptomatic,Unvaccinated,Unknown,9/7/2021,on going quarantine,N/A,Active
+13,Alaminos,52,50-54,Female,Non-teaching,Alaminos,Casual,Yes,Symptomatic,Vaccinated(1st Dose),Unknown,6/30/2021,July 2021,N/A,Recovered
+14,Asingan,36,35-39,Male,Teaching,San Jacinto,Permanent,No,Asymptomatic,Vaccinated(Fully),Home,2/3/2021,"February 18, 2021",N/A,Recovered
+15,Asingan,48,45-49,Male,Non-teaching,Asingan,Permanent,No,Asymptomatic,Vaccinated(1st Dose),Unknown,5/28/2021,June 2021,N/A,Recovered
+16,Asingan,33,30-34,Male,Non-teaching,Tayug,Casual,No,Asymptomatic,Vaccinated(1st Dose),Work,7/5/2021,"July 20, 2021",N/A,Recovered
+17,Asingan,60,60-64,Female,Non-teaching,Urdaneta,Permanent,Yes,Asymptomatic,Vaccinated(Fully),Work,7/5/2021,"July 20, 2021",N/A,Recovered
+18,Asingan,22,20-24,Male,Non-teaching,Asingan,Job Order,No,Asymptomatic,Unvaccinated,Work,7/5/2021,"July 20, 2021",N/A,Recovered
+19,Asingan,41,40-44,Female,Teaching,Villasis,Permanent,No,Asymptomatic,Unvaccinated,Work,6/12/2021,"June 27, 20121",N/A,Recovered
+20,Asingan,33,30-34,Male,Teaching,Tayug,Temporary,No,Asymptomatic,Vaccinated(1st Dose),Work,6/12/2021,"June 27, 2021",N/A,Recovered
+21,Asingan,40,40-44,Male,Teaching,Asingan,Permanent,No,Asymptomatic,Vaccinated(Fully),Unknown,6/13/2021,"June 28, 2021",N/A,Recovered
+22,Asingan,41,40-44,Male,Teaching,Asingan,Permanent,Yes,Symptomatic,Vaccinated(1st Dose),Unknown,6/19/2021,"July 4, 2021",N/A,Recovered
+23,Asingan,40,40-44,Male,Teaching,Urdaneta,Permanent,No,Symptomatic,Unvaccinated,Unknown,8/20/2021,"September 4, 2021",N/A,Recovered
+24,Asingan,28,25-29,Male,Teaching,Urdaneta,Permanent,No,Symptomatic,Unvaccinated,Home,8/27/2021,September 2021,N/A,Recovered
+25,San Carlos,43,40-44,Female,Teaching,Bugallon,Permanent,No,Symptomatic,Vaccinated(1st Dose),Unknown,8/22/2021,Expired- 08/26/2021,Yes,Deceased
+26,Bayambang,31,30-34,Male,Teaching,Bautista,Permanent,Yes,Symptomatic,Unvaccinated,Unknown,9/12/2021,Recovered,N/A,Recovered
+27,San Carlos,54,50-54,Male,Non-teaching,San Carlos,Job Order,Yes,Symptomatic,Unvaccinated,Unknown,8/26/2021,Hospitalize,N/A,Recovered
+28,Bayambang,58,55-59,Male,Teaching,Urdaneta,Permanent,Yes,Symptomatic,Unvaccinated,Unknown,9/11/2021,,N/A,Active
+29,Bayambang,39,35-39,Male,Teaching,Malasiqui,Permanent,Yes,Symptomatic,Unvaccinated,Unknown,9/6/2021,Recovered,N/A,Active
+30,Bayambang,45,45-49,Female,Teaching,Malasiqui,Permanent,Yes,Symptomatic,Unvaccinated,Unknown,9/1/2021,Home isolation,N/A,Active
+31,Bayambang,60,60-64,Female,Teaching,Bayambang,Permanent,Yes,Symptomatic,Unvaccinated,Home,8/27/2021,Recovered,N/A,Recovered
+32,Bayambang,47,45-49,Male,Teaching,Rosales,Permanent,Yes,Symptomatic,Unvaccinated,Unknown,8/29/2021,"Expired- Sept.1, 2021",Yes,Deceased
+33,Bayambang,61,60-64,Male,Non-teaching,Bayambang,Permanent,Yes,Symptomatic,Unvaccinated,Unknown,8/18/2021,Recovered,N/A,Active
+34,Bayambang,32,30-34,Male,Teaching,Bayambang,Permanent,Yes,Symptomatic,Unvaccinated,Unknown,7/15/2021,Recovered,N/A,Recovered
+35,Bayambang,46,45-49,Male,Non-teaching,Bayambang,Permanent,Yes,Symptomatic,Vaccinated(Fully),Unknown,6/4/2021,Recovered,N/A,Recovered
+36,Urdaneta,61,60-64,Male,Teaching,Tarlac,Permanent,Yes,Symptomatic,Unvaccinated,Unknown,5/10/2021,Recovered,N/A,Recovered
+37,Urdaneta,23,20-24,Female,Teaching,Urdaneta,Permanent,No,Symptomatic,Unvaccinated,Home,6/29/2021,Recovered,N/A,Recovered
+38,Urdaneta,56,55-59,Female,Teaching,Binalonan,Permanent,Yes,Asymptomatic,Unvaccinated,Home,7/16/2021,Recovered,N/A,Recovered
+39,Urdaneta,39,35-39,Male,Teaching,Calasiao,Permanent,No,Asymptomatic,Unvaccinated,Unknown,7/23/2021,Recovered,N/A,Recovered
+40,San Carlos,28,25-29,Male,Non-teaching,San Carlos,Permanent,Yes,Symptomatic,Unvaccinated,Unknown,9/8/2021,Home isolation,N/A,Recovered
+41,Urdaneta,23,20-24,Male,Teaching,Agno,Permanent,No,Symptomatic,Unvaccinated,Unknown,8/31/2021,Home quarantine,N/A,Active
+42,San Carlos,39,35-39,Female,Non-teaching,San Carlos,Permanent,No,Symptomatic,Unvaccinated,Unknown,9/7/2021,Home quarantine,N/A,Recovered
+43,Urdaneta,51,50-54,Male,Teaching,Urdaneta,Permanent,Yes,Symptomatic,Unvaccinated,Home,9/7/2021,Home Quarantine,N/A,Active
+44,Sta Maria,28,25-29,Male,Teaching,Santa Maria,Permanent,No,Asymptomatic,Unvaccinated,Unknown,9/9/2021,on going quarantine,N/A,Active
+45,Sta Maria,31,30-34,Male,Non-teaching,Alaminos,Permanent,Yes,Symptomatic,Vaccinated(Fully),Home,9/11/2021,on going quarantine,N/A,Active
+46,Bayambang,32,30-34,Female,Teaching,Bayambang,Permanent,No,Symptomatic,Vaccinated(1st Dose),Unknown,"Sept. 17, 2021- Antigen Test",Home Isolation,N/A,Active
+47,Bayambang,48,45-49,Male,Non-teaching,Bayambang,Permanent,Yes,Symptomatic,Vaccinated(Fully),Unknown,"Sept. 17, 2021- Antigen Test",Home Isolation,N/A,Active
+48,Lingayen,28,25-29,Female,Non-teaching,Lingayen,Casual,No,Symptomatic,Vaccinated(1st Dose),Home,9/18/2021,on going quarantine,N/A,Active
+49,Lingayen,55,55-59,Female,Teaching,Dagupan,Permanent,No,Symptomatic,Unvaccinated,Unknown,9/15/2021,on going quarantine,N/A,Active
+50,Lingayen,47,45-49,Male,Non-teaching,Lingayen,Permanent,Yes,Symptomatic,Vaccinated(1st Dose),Unknown,9/22/2021,Hospitalize,N/A,Active
+51,Binmaley,57,55-59,Male,Teaching,Binmaley,Permanent,Yes,Asymptomatic,Vaccinated(Fully),Unknown,7/20/21,July 2021,N/A,Recovered
+52,Binmaley,36,35-39,Male,Non-teaching,San Carlos,Permanent,No,Symptomatic,Unvaccinated,Unknown,"Sept. 12, 2021- Saliva Test",on going quarantine,N/A,Recovered
+53,Lingayen,60,60-64,Female,Teaching,Binmaley,Permanent,Yes,Symptomatic,Vaccinated(Fully),Work,9/27/2021,Hospitalize,N/A,Active
+54,Binmaley,40,40-44,Female,Non-teaching,Lingayen,Permanent,Yes,Symptomatic,Vaccinated(1st Dose),Unknown,"Sept. 28, 2021",Hospitalize,N/A,Active
+55,Lingayen,43,40-44,Female,Teaching,Dagupan,Permanent,No,Symptomatic,Vaccinated(Fully),Unknown,9/29/2021,Home Isolation,N/A,Active
+56,Lingayen,40,40-44,Male,Teaching,Dagupan,Permanent,No,Symptomatic,Vaccinated(Fully),Unknown,9/30/2021,Home Isolation,N/A,Active
+57,Bayambang,44,40-44,Male,Teaching,Malasiqui,Permanent,Yes,Symptomatic,Vaccinated(Fully),Unknown,"Sept. 21, 2021",Home Isolation,N/A,Active
+58,Bayambang,35,35-39,Male,Teaching,Mangaldan,Permanent,Yes,Symptomatic,Unvaccinated,Unknown,"Sept. 23, 2021",Home Isolation,N/A,Active
+59,Bayambang,51,50-54,Female,Teaching,Bayambang,Permanent,No,Symptomatic,Vaccinated(1st Dose),Unknown,"Sept. 28, 2021- Antigen Test",Home quarantine,N/A,Active
+60,Infanta,63,60-64,Female,Non-teaching,Infanta,Permanent,Yes,Symptomatic,Vaccinated(1st Dose),Home,"Sept. 20, 2021 - Antigen Test",Home Quarantine,N/A,Active
+61,Lingayen,41,40-44,Female,Teaching,San Carlos,Permanent,Yes,Symptomatic,Vaccinated(Fully),Unknown,10/3/2021,Home Quarantine,N/A,Active
