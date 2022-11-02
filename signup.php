@@ -1,8 +1,6 @@
 <?php
 session_start();
 include 'php/db_config.php';
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,9 +9,9 @@ include 'php/db_config.php';
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>iConsult | Signup</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>Letran - Manaoag | Signup</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
@@ -26,7 +24,10 @@ include 'php/db_config.php';
         .inputs {
             min-width: 300px;
         }
-
+       .image{
+           margin-top: 50px;
+           margin-left: 50px;
+       }
         body {
             background-image: url("assets/images/bg.jpg");
             background-size: cover;
@@ -44,17 +45,15 @@ include 'php/db_config.php';
 
                     <div class="col-md-5">
                         <div>
-                            <div class="">
-                                <img src="assets/images/logo.PNG?" alt="" height="30" />
-                            </div>
+                            
 
-                            <div class="d-flex align-items-center mb-3 d-none d-md-block">
-                                <img src="assets/images/login.jpg" style="object-fit: contain; width: 400px" alt="" />
+                            <div class="d-flex align-items-center mb-3 d-none d-md-block image">
+                                <img src="assets/images/letran_logo.png" style="object-fit: contain; width: 300px" alt="" />
                             </div>
 
                             <img src="img/consultation.jpg" alt="" style="width: 100%;" class="round-2 mb-3">
                             <div class="smallTxt text-center">Already have account?</div>
-                            <a href="login.php" class="btn  btn-light shadow-sm w-100 mb-3 ">Login</a>
+                            <a href="signin.php" class="btn  btn-light shadow-sm w-100 mb-3 ">Signin</a>
                         </div>
                     </div>
                     <div class="col-md-7">
@@ -75,11 +74,21 @@ include 'php/db_config.php';
                                         <div class="smallTxt">Lastname</div>
                                         <input type="text" class="form-control mb-2 round-2" name="lastname" id="lname" required>
                                     </div>
-                                    <div class="col-md-5">
+                                    <div class="col-md-3">
+                                        <div class="smallTxt">Course</div>
+                                        <input type="text" class="form-control mb-2 round-2" name="course" id="course" required>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="smallTxt">Year</div>
+                                        <input type="text" class="form-control mb-2 round-2" name="year" pattern="[0-9]{0,16}" id="year" required>
+                                    </div>
+
+
+                                    <div class="col-md-4">
                                         <div class="smallTxt">Birthday</div>
                                         <input type="date" class="form-control mb-2 round-2" name="birthday" id="bd" required>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <div class="smallTxt">Gender</div>
                                         <select class="form-select round-2 mb-2" name="gender" required>
                                             <option value="">- - -</option>
@@ -96,7 +105,7 @@ include 'php/db_config.php';
                                     </div>
                                     <div class="col-md-6">
                                         <div class="smallTxt">Phonenumber</div>
-                                        <input type="text" class="form-control mb-2 round-2" name="phone" required>
+                                        <input type="text" class="form-control mb-2 round-2" pattern="[0-9]{0,11}" name="phone" required>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="smallTxt">Region</div>
@@ -116,9 +125,17 @@ include 'php/db_config.php';
                                         </select>
 
                                     </div>
+                                    <div class="col-md-12">
+                                        <div class="smallTxt">Address</div>
+                                        <input type="text" class="form-control mb-2 round-2" name="address"  id="address" required>
+                                    </div>
                                 </div>
                                 <div class="smallTxt fw-bold">Account Information</div>
                                 <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <div class="smallTxt">School ID</div>
+                                        <input type="text" class="form-control mb-2 round-2" name="school_id" pattern="[0-9]{0,16}" id="school_id" required>
+                                    </div>
                                     <div class="col-md-6">
                                         <div class="smallTxt">Username <span class="fw-light fst-italic text-muted">(A-Z,a-z,0-9 | 8+ characters)</span></div>
                                         <input type="text" class="form-control mb-2 round-2" name="username" minlength="8" pattern="[A-Za-z0-9]{8,16}" id="username" required>
@@ -136,9 +153,7 @@ include 'php/db_config.php';
                                 <div>
 
                                     <button type="submit" name="submit" class="btn px-3 round-2 btn-sm shadow btn-primary fw-bold float-end">Submit</button>
-                                    <div class="spinner-border text-primary float-end me-3 d-none" id="myloading" role="status">
-                                        <span class="visually-hidden">Loading...</span>
-                                    </div>
+                                   
                                 </div>
                             </form>
                         </div>
@@ -151,32 +166,6 @@ include 'php/db_config.php';
     </div>
 
 
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary d-none" data-bs-toggle="modal" id="verification-modal" data-bs-target="#exampleModal">
-        Launch demo modal
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Verification</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="smallTxt mb-2">An email has been sent your email, please check for the verification code and enter it below</div>
-                    <input type="number" class="form-control round-2 text-center" id="input-code">
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary d-none" id="close-modal" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn text-primary bg-white" id="resend" disabled>Resend <span id="timer"></span></button>
-                    <button type="button" class="btn btn-success" id="verify">Confirm</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 
@@ -255,16 +244,16 @@ include 'php/db_config.php';
         }
 
 
+
+
+
+
+
+
         $("#signup-form").submit(function(e) {
             e.preventDefault();
 
-            if (yearsDiff($("#bd").val(), "<?= date("Y-m-d") ?>") < 18) {
-                Swal.fire(
-                    'Oops!',
-                    'You are below 18.',
-                    'info'
-                )
-            } else if ($("#confirm-password").val() != $("#password").val()) {
+           if ($("#confirm-password").val() != $("#password").val()) {
                 Swal.fire(
                     'Oops!',
                     'You password did not match.',
@@ -272,25 +261,25 @@ include 'php/db_config.php';
                 )
             } else {
 
-                $.post("ajax/check-username.php", {
-                    username: $("#username").val()
+                $.post("ajax/check-id.php", {
+                    school_id: $("#school_id").val()
                 }, function(data) {
-                    if (data == 1) {
+                    if (data == 0) {
                         Swal.fire(
                             'Oops!',
-                            'Username already in used.',
+                            'Your ID is not registered to our database.',
                             'info'
                         )
-                    } else {
-                        //sendmail();
-                        $("#myloading").removeClass("d-none");
-                        $.post("ajax/signup.php",
-                            $("#signup-form").serialize(),
-                            function(response) {
-                                if (response == 1) {
-                                    window.location.href = "login.php?status=registered";
-                                } else console.log(response);
-                            });
+
+                        }else {
+                            
+                            $.post("ajax/signup.php",
+                                $("#signup-form").serialize(),
+                                function(response) {
+                                    if (response == 1) {
+                                        window.location.href = "signin.php?status=registered";
+                                    } else console.log(response);
+                                });
                     }
                 });
 
@@ -300,60 +289,8 @@ include 'php/db_config.php';
 
         });
 
-        $("#resend").click(function() {
-            $("#close-modal").click();
-            sendmail();
-        })
-
-        function sendmail() {
-
-            $("#myloading").removeClass("d-none");
-
-            code = Math.floor(100000 + Math.random() * 900000);
-            var myBody = `Hello, this is your code: ${code} .`;
-            var email = $("#email").val();
-
-            var name = $("#fname").val() + " " + $("#lname").val();
-            $.post("mailer/index.php", {
-                mySubject: "iConsult Verification",
-                myBody,
-                email,
-                name
-            }, function(data) {
-                if (data == 1) {
-                    $("#verification-modal").click();
-                    mytimer();
-                    $("#myloading").addClass("d-none");
-                } else {
-                    $("#myloading").addClass("d-none");
-                    Swal.fire(
-                        'Oops!',
-                        'Email not sent, retry later.',
-                        'info'
-                    )
-                }
-            });
-
-        }
 
 
-        $("#verify").click(function() {
-
-
-            if ($("#input-code").val() == code) {
-                $.post("ajax/signup.php",
-                    $("#signup-form").serialize(),
-                    function(response) {
-                        if (response == 1) {
-                            window.location.href = "login.php?status=registered";
-                        } else console.log(response);
-                    });
-            } else {
-                alert("Incorrect verification code.");
-            }
-
-
-        });
     </script>
 </body>
 

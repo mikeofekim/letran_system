@@ -9,6 +9,11 @@ $lname = $conn->real_escape_string($_POST['lastname']);
 $bd = $_POST['birthday'];
 $gender = $_POST['gender'];
 
+$course = $_POST['course'];
+$year = $_POST['year'];
+$school_id = $_POST['school_id'];
+$address = $_POST['address'];
+
 $email = $_POST['email'];
 $phone =  $conn->real_escape_string($_POST['phone']);
 
@@ -26,7 +31,7 @@ $diff = date_diff(date_create($dateOfBirth), date_create($today));
 $age = $diff->format('%Y');
 
 
-$sql = "INSERT INTO `usertbl`( `firstName`, `middleName`, `lastName`, `birthday`, `gender`, `email`, `phonenumber`, `region`, `province`, `muncity`, `imagefile`) VALUES ('$fname','$mname','$lname','$bd',$gender,'$email','$phone','$region','$province','$muncity', 'default.jpg')";
+$sql = "INSERT INTO `usertbl`( `firstName`, `middleName`, `lastName`, `birthday`, `gender`, `email`, `phonenumber`, `course`, `year`, `school_id`,`address`, `region`, `province`, `muncity`, `imagefile`) VALUES ('$fname','$mname','$lname','$bd',$gender,'$email','$phone','$course','$year','$school_id','$address','$region','$province','$muncity', 'default.jpg')";
 
 mysqli_query($conn, $sql);
 $last_id = $conn->insert_id;
@@ -35,3 +40,4 @@ mysqli_query($conn, $sql);
 echo $conn->error;
 
 echo 1;
+
