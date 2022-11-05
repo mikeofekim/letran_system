@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light d-block d-sm-block d-md-none ">
     <div class="container-fluid">
-        <a class="navbar-brand" href="../index.php"> <img src="../assets/images/logo.PNG?" alt="" height="30"></a>
+       <a href="../index.php" style="text-decoration: none;"> <img src="../assets/images/letran_logo.PNG?" alt="" height="45">
+                    <span class="h5 fw-bold " style="color: #1F618D;">Letran - Manaoag</span>
+                    </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,18 +31,18 @@
                 <li class="nav-item">
                     <a class="nav-link" href="doctors.php">
                         <div class="d-flex align-items-center">
-                            <div class="text-center" style="width: 30px"><i class="fas fa-user-md"></i></div>
-                            <div class="h6 mb-0">Doctors</div>
+                            <div class="text-center" style="width: 30px"><i class="fas fa-user"></i></div>
+                            <div class="h6 mb-0">Teachers</div>
                         </div>
 
 
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="reports.php">
+                    <a class="nav-link" href="doctors.php">
                         <div class="d-flex align-items-center">
                             <div class="text-center" style="width: 30px"><i class="fas fa-file-alt"></i></div>
-                            <div class="h6 mb-0">Reports</div>
+                            <div class="h6 mb-0">Students</div>
                         </div>
 
 

@@ -2,7 +2,10 @@
     <div class="card bg-light border-0 round-0 shadow-sm" style="height: calc(100vh - 50px)">
         <div class="card-body">
             <div class=" py-2">
-                <div class="mb-3"><a href="../index.php"> <img src="../assets/images/logo.PNG?" alt="" height="30"></a>
+                <div class="mb-3">
+                    <a href="../index.php" style="text-decoration: none;"> <img src="../assets/images/letran_logo.PNG?" alt="" height="45">
+                    <span class="h5 fw-bold " style="color: #1F618D;">Letran - Manaoag</span>
+                    </a>
 
                 </div>
 
@@ -23,13 +26,14 @@
                         <div class="ms-auto me-3"><i class="fas fa-chevron-right"></i></div>
                     </div>
                     <div class=" h6 d-flex align-items-center mb-2 py-3 sidebtn round-1" id="navdoctors" onclick="window.location.href='doctors.php'">
-                        <div class="text-center" style="width: 50px"> <i class="fas fa-user-md"></i></div>
-                        <div class="mb-0 fw-bold">Doctors</div>
+                        <div class="text-center" style="width: 50px"> <i class="fas fa-user"></i></div>
+                        <div class="mb-0 fw-bold">Teachers</div>
                         <div class="ms-auto me-3"><i class="fas fa-chevron-right"></i></div>
                     </div>
+                    
                     <div class=" h6 d-flex align-items-center mb-2 py-3 sidebtn round-1" id="navreports" onclick="window.location.href='reports.php'">
                         <div class="text-center" style="width: 50px"> <i class="fas fa-file-alt"></i></div>
-                        <div class="mb-0 fw-bold">Reports</div>
+                        <div class="mb-0 fw-bold">Students</div>
                         <div class="ms-auto me-3"><i class="fas fa-chevron-right"></i></div>
                     </div>
                 </div>
