@@ -1,12 +1,13 @@
 <?php
 session_start();
 include('../../php/db_config.php');
+$id = $_POST['id'];
 
-$id = $_POST['vcid'];
 
-
-$sql = "DELETE FROM videocall WHERE vcid = $id";
+$sql = "DELETE FROM usertbl WHERE userID= $id";
 
 if (mysqli_query($conn, $sql)) {
     echo 1;
-} else echo $conn->error;
+} else {
+    echo $conn->error;
+}

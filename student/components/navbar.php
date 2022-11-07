@@ -10,8 +10,8 @@
                 <div class="mb me-2  round-1"><img src="../assets/images/<?= $_SESSION['user']['imagefile'] ?>" class="round shadow-sm" height="60" width="60" alt="">
                 </div>
                 <div class="">
-                    <div class="h5 mb-0 fw-bold text-nowrap"><?= $_SESSION['user']['firstName'] . " " . $_SESSION['user']['lastName'] ?></div>
-                    <div class="h6 mb-0 "><span class="badge bg-primary">Patient</span></div>
+                    <div class="h5 mb-0 fw-bold text-nowrap">Dr. <?= $_SESSION['user']['firstName'] . " " . $_SESSION['user']['lastName'] ?></div>
+                    <div class="h6 mb-0 "><span class="badge bg-primary">Health Professional</span></div>
                 </div>
             </div>
 
@@ -25,28 +25,23 @@
                         </div>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="browse.php">
-                        <div class="d-flex align-items-center">
 
-                            <div class="text-center" style="width: 30px"><i class="fas fa-search"></i></div>
-                            <div class="h6 mb-0">Browse</div>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="students.php">
+                        <div class="d-flex align-items-center">
+                            <div class="text-center" style="width: 30px"><i class="fas fa-user"></i></div>
+                            <div class="h6 mb-0">Students</div>
                         </div>
+
+
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="check.php">
+                    <a class="nav-link" href="records.php">
                         <div class="d-flex align-items-center">
-                            <div class="text-center" style="width: 30px"><i class="fas fa-clipboard-list"></i></div>
-                            <div class="h6 mb-0">Check Health</div>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="consult.php">
-                        <div class="d-flex align-items-center">
-                            <div class="text-center" style="width: 30px"><i class="fas fa-laptop-medical"></i></div>
-                            <div class="h6 mb-0">Consult</div>
+                            <div class="text-center" style="width: 30px"><i class="fas fa-list"></i></div>
+                            <div class="h6 mb-0">Records</div>
                         </div>
 
 
@@ -72,6 +67,7 @@
 
                     </a>
                 </li>
+
             </ul>
         </div>
     </div>

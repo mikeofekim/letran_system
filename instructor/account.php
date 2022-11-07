@@ -3,10 +3,10 @@ session_start();
 include('../php/db_config.php');
 if (isset($_SESSION['userType'])) {
     if ($_SESSION['userType'] != 2) {
-        header('Location: ../login.php');
+        header('Location: ../signin.php');
     }
 } else {
-    header('Location: ../login.php');
+    header('Location: ../signin.php');
 }
 
 $user = $_SESSION['user'];
@@ -19,13 +19,13 @@ $userdata = $_SESSION['userdata']
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="components/favicon.png" type="image/x-icon">
+    <link rel="icon" href="components/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
 
-    <title>iConsult | Account</title>
+    <title>Instructor | Account</title>
     <style>
         .mycard {
             height: calc(100vh - 95px);
@@ -108,11 +108,11 @@ $userdata = $_SESSION['userdata']
                                     <input type="text" class="form-control round-2 mb-2 pointer shadow-sm " value="<?= $user['specialization'] ?>" readonly>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="smallTxt fw-bold">License #</div>
+                                    <div class="smallTxt fw-bold">School ID #</div>
                                     <input type="text" class="form-control round-2 mb-2 pointer shadow-sm " value="<?= $user['license'] ?>" readonly>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="smallTxt fw-bold">Hospital</div>
+                                    <div class="smallTxt fw-bold">Department</div>
                                     <input type="text" class="form-control round-2 mb-2 pointer shadow-sm " value="<?= $user['hospital'] ?>" readonly>
                                 </div>
                                 <div class="col-md-4">

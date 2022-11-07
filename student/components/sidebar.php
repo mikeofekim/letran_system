@@ -3,9 +3,9 @@
         <div class="card-body">
             <div class=" py-2">
                 <div class="mb-3">
-                    <a href="../index.php">
-                        <img src="../assets/images/logo.PNG?" alt="" height="30"></a>
-
+                    <a href="index.php" style="text-decoration: none;"> <img src="../assets/images/letran_logo.PNG?" alt="" height="45">
+                    <span class="h5 fw-bold " style="color: #1F618D;">Letran - Manaoag</span>
+                    </a>
                 </div>
 
 
@@ -13,7 +13,7 @@
                     <div class="mb me-2"><img src="../assets/images/<?= $_SESSION['user']['imagefile'] ?>" class="round shadow-sm" height="60" width="60" alt=""></div>
                     <div class="">
                         <div class="h5 mb-0 fw-bold text-wrap"><?= $_SESSION['user']['firstName'] . " " . $_SESSION['user']['lastName'] ?></div>
-                        <div class="h6 mb-0 "><span class="badge bg-primary">Patient</span></div>
+                        <div class="h6 mb-0 "><span class="badge bg-primary">Student</span></div>
                     </div>
                 </div>
 
@@ -24,19 +24,11 @@
                         <div class="mb-0 fw-bold">Home</div>
                         <div class="ms-auto me-3"><i class="fas fa-chevron-right"></i></div>
                     </div>
-                    <div class=" h6 d-flex align-items-center mb-2 py-3 sidebtn round-1" id="navbrowse" onclick="window.location.href='browse.php'">
-                        <div class="text-center" style="width: 50px"> <i class="fas fa-search"></i></div>
-                        <div class="mb-0 fw-bold">Browse</div>
-                        <div class="ms-auto me-3"><i class="fas fa-chevron-right"></i></div>
-                    </div>
-                    <div class=" h6 d-flex align-items-center  mb-2 py-3 sidebtn round-1" id="navcheck" onclick="window.location.href='check.php'">
-                        <div class="text-center" style="width: 50px"> <i class="fas fa-clipboard-list"></i></div>
-                        <div class="mb-0 fw-bold">Check Health</div>
-                        <div class="ms-auto me-3"><i class="fas fa-chevron-right"></i></div>
-                    </div>
-                    <div class=" h6 d-flex align-items-center   mb-2 py-3 sidebtn round-1" id="navconsult" onclick="window.location.href='consult.php'">
-                        <div class="text-center" style="width: 50px"> <i class="fas fa-laptop-medical"></i></div>
-                        <div class="mb-0 fw-bold">Consult</div>
+
+             
+                    <div class=" h6 d-flex align-items-center   mb-2 py-3 sidebtn round-1" id="navrecord" onclick="window.location.href='records.php'">
+                        <div class="text-center" style="width: 50px"> <i class="fas fa-list"></i></div>
+                        <div class="mb-0 fw-bold">reports</div>
                         <div class="ms-auto me-3"><i class="fas fa-chevron-right"></i></div>
                     </div>
                 </div>

@@ -36,12 +36,12 @@ if (isset($_POST['submit'])) {
                 if ($user['userType'] == 3) {
                     $_SESSION['user'] = mysqli_query($conn, "SELECT * FROM usertbl WHERE userID =" . $user['linkedAccount'])->fetch_assoc();
 
-                    header('Location: patient');
+                    header('Location: student');
                 }
                 if ($user['userType'] == 2) {
-                    $_SESSION['user'] = mysqli_query($conn, "SELECT * FROM doctortbl WHERE doctorID =" . $user['linkedAccount'])->fetch_assoc();
+                    $_SESSION['user'] = mysqli_query($conn, "SELECT * FROM teachers WHERE doctorID =" . $user['linkedAccount'])->fetch_assoc();
 
-                    header('Location: doctor');
+                    header('Location: instructor');
                 }
                 if ($user['userType'] == 1) {
 
@@ -58,6 +58,8 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">

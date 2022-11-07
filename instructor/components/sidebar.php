@@ -2,7 +2,9 @@
     <div class="card bg-light border-0 round-0 shadow-sm" style="height: calc(100vh - 50px)">
         <div class="card-body">
             <div class=" py-2">
-                <div class="mb-3"><a href="../index.php"> <img src="../assets/images/logo.PNG?" alt="" height="30">
+                <div class="mb-3">
+                    <a href="index.php" style="text-decoration: none;"> <img src="../assets/images/letran_logo.PNG?" alt="" height="45">
+                    <span class="h5 fw-bold " style="color: #1F618D;">Letran - Manaoag</span>
                     </a>
                 </div>
 
@@ -11,7 +13,7 @@
                     <div class="mb me-2"><img src="../assets/images/<?= $_SESSION['user']['imagefile'] ?>" class="round shadow-sm" height="60" width="60" alt=""></div>
                     <div class="">
                         <div class="h5 mb-0 fw-bold text-wrap"><?= $_SESSION['user']['firstName'] . " " . $_SESSION['user']['lastName'] ?></div>
-                        <div class="h6 mb-0 "><span class="badge bg-primary">Health Professional</span></div>
+                        <div class="h6 mb-0 "><span class="badge bg-primary">Instructor</span></div>
                     </div>
                 </div>
 
@@ -23,9 +25,9 @@
                         <div class="ms-auto me-3"><i class="fas fa-chevron-right"></i></div>
                     </div>
 
-                    <div class=" h6 d-flex align-items-center   mb-2 py-3 sidebtn round-1" id="navconsult" onclick="window.location.href='consult.php'">
-                        <div class="text-center" style="width: 50px"> <i class="fas fa-laptop-medical"></i></div>
-                        <div class="mb-0 fw-bold">Consultations</div>
+                    <div class=" h6 d-flex align-items-center   mb-2 py-3 sidebtn round-1" id="navconsult" onclick="window.location.href='students.php'">
+                        <div class="text-center" style="width: 50px"> <i class="fas fa-user"></i></div>
+                        <div class="mb-0 fw-bold">Students</div>
                         <div class="ms-auto me-3"><i class="fas fa-chevron-right"></i></div>
                     </div>
                     <div class=" h6 d-flex align-items-center   mb-2 py-3 sidebtn round-1" id="navrecord" onclick="window.location.href='records.php'">

@@ -28,10 +28,10 @@
 
 
                 <li class="nav-item">
-                    <a class="nav-link" href="consult.php">
+                    <a class="nav-link" href="students.php">
                         <div class="d-flex align-items-center">
-                            <div class="text-center" style="width: 30px"><i class="fas fa-laptop-medical"></i></div>
-                            <div class="h6 mb-0">Consultations</div>
+                            <div class="text-center" style="width: 30px"><i class="fas fa-user"></i></div>
+                            <div class="h6 mb-0">Students</div>
                         </div>
 
 

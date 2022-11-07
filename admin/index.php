@@ -36,8 +36,7 @@ $trends = [array(0, 0, 0, 0, 0, 0), array(0, 0, 0, 0, 0, 0), array(0, 0, 0, 0, 0
 date_default_timezone_set("Asia/Manila");
 $arr = [];
 $arr1 = [];
-$sql = "SELECT * FROM diagnosis a INNER JOIN usertbl b ON a.userid = b.userID";
-$result = mysqli_query($conn, $sql);
+
 
 
     
