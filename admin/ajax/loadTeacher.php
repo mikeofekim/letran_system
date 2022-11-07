@@ -3,10 +3,10 @@ session_start();
 include('../../php/db_config.php');
 
 $keyword = $_POST['keyword'];
-$sql = "SELECT * FROM doctortbl";
+$sql = "SELECT * FROM teachers";
 
 if ($keyword != "") {
-    $sql = "SELECT * FROM doctortbl WHERE license LIKE '$keyword%' OR specialization LIKE '$keyword%' OR firstName LIKE '$keyword%' OR lastName LIKE '$keyword%'";
+    $sql = "SELECT * FROM teachers WHERE license LIKE '$keyword%' OR specialization LIKE '$keyword%' OR firstName LIKE '$keyword%' OR lastName LIKE '$keyword%'";
 }
 $result = mysqli_query($conn, $sql);
 
@@ -18,7 +18,7 @@ $result = mysqli_query($conn, $sql);
     <thead>
         <tr class="bg-light">
             <th scope="col" class="pd">#</th>
-            <th scope="col" class="pd">Doctor License #</th>
+            <th scope="col" class="pd">Teacher ID #</th>
             <th scope="col" class="pd">Name</th>
             <th scope="col" class="pd">Specialization</th>
             <th scope="col" class="pd">Actions</th>
@@ -28,8 +28,6 @@ $result = mysqli_query($conn, $sql);
 
         <?php
 
-
-
         if ($result->num_rows > 0) {
             $count = 0;
             while ($row = $result->fetch_assoc()) {
@@ -37,7 +35,7 @@ $result = mysqli_query($conn, $sql);
                 <tr>
                     <th scope="row" class="pd"><?= ++$count ?></th>
                     <td class="pd"><?= $row['license'] ?></td>
-                    <td class="pd text-nowrap">Dr. <?= $row['lastName'] . ', ' . $row['firstName'] . " " . $row['middleName']  ?></td>
+                    <td class="pd text-nowrap"> <?= $row['lastName'] . ', ' . $row['firstName'] . " " . $row['middleName']  ?></td>
 
                     <td class="pd text-nowrap"><?= $row['specialization'] ?></td>
                     <td class="pd text-nowrap"><button class="btn btn-sm btn-light text-danger me-2 round-1" onclick="deleteDoc(<?= $row['doctorID'] ?>)"><i class="fas fa-user-times"></i></button>

@@ -20,18 +20,15 @@
 
 
                 <div class="py-3 ">
-                    <div class=" h6 d-flex align-items-center mb-2 py-3 sidebtn round-1" id="navhome" onclick="window.location.href='index.php'">
-                        <div class="text-center" style="width: 50px"> <i class="fas fa-home"></i></div>
-                        <div class="mb-0 fw-bold">Home</div>
-                        <div class="ms-auto me-3"><i class="fas fa-chevron-right"></i></div>
-                    </div>
-                    <div class=" h6 d-flex align-items-center mb-2 py-3 sidebtn round-1" id="navdoctors" onclick="window.location.href='doctors.php'">
+                   
+
+                    <div class=" h6 d-flex align-items-center mb-2 py-3 sidebtn round-1" id="navdoctors" onclick="window.location.href='teachers.php'">
                         <div class="text-center" style="width: 50px"> <i class="fas fa-user"></i></div>
                         <div class="mb-0 fw-bold">Teachers</div>
                         <div class="ms-auto me-3"><i class="fas fa-chevron-right"></i></div>
                     </div>
                     
-                    <div class=" h6 d-flex align-items-center mb-2 py-3 sidebtn round-1" id="navreports" onclick="window.location.href='reports.php'">
+                    <div class=" h6 d-flex align-items-center mb-2 py-3 sidebtn round-1" id="navreports" onclick="window.location.href='students.php'">
                         <div class="text-center" style="width: 50px"> <i class="fas fa-file-alt"></i></div>
                         <div class="mb-0 fw-bold">Students</div>
                         <div class="ms-auto me-3"><i class="fas fa-chevron-right"></i></div>

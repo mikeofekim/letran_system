@@ -16,11 +16,11 @@ $hospital = $conn->real_escape_string($_POST['hospital']);
 $h_address = $conn->real_escape_string($_POST['h_address']);
 
 
-$sql = "INSERT INTO `doctortbl`(`firstName`, `middleName`, `lastName`,  `specialization`, `address`, `email`, `contact`, `license`, `hospital`, `h_address`, `imagefile`, `gender`) VALUES ('$fname','$mname','$lname','$sp','$address','$email','$contact','$license','$hospital','$h_address', 'default.jpg', 0)";
+$sql = "INSERT INTO `teachers`(`firstName`, `middleName`, `lastName`,  `specialization`, `address`, `email`, `contact`, `license`, `hospital`, `h_address`, `imagefile`, `gender`) VALUES ('$fname','$mname','$lname','$sp','$address','$email','$contact','$license','$hospital','$h_address', 'default.jpg', 0)";
 
 if (mysqli_query($conn, $sql)) {
     $last_id = $conn->insert_id;
-    $username = 'temp_user' . rand(1000, 9999);
+    $username = 'new_user' . rand(1000, 9999);
     $password = md5('12345678');
     $sql = "INSERT INTO `useraccount`(`username`, `password`, `userType`, `linkedAccount`, `a_status`) VALUES ('$username','$password',2,$last_id, 1)";
     mysqli_query($conn, $sql);

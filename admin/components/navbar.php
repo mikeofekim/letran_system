@@ -18,18 +18,11 @@
 
 
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php">
-                        <div class="d-flex align-items-center">
-                            <div class="text-center" style="width: 30px"><i class="fas fa-home"></i></div>
-                            <div class="h6 mb-0">Home</div>
-                        </div>
-                    </a>
-                </li>
+            
 
 
                 <li class="nav-item">
-                    <a class="nav-link" href="doctors.php">
+                    <a class="nav-link" href="teachers.php">
                         <div class="d-flex align-items-center">
                             <div class="text-center" style="width: 30px"><i class="fas fa-user"></i></div>
                             <div class="h6 mb-0">Teachers</div>
@@ -39,7 +32,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="doctors.php">
+                    <a class="nav-link" href="students.php">
                         <div class="d-flex align-items-center">
                             <div class="text-center" style="width: 30px"><i class="fas fa-file-alt"></i></div>
                             <div class="h6 mb-0">Students</div>

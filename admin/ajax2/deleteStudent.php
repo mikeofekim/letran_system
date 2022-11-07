@@ -4,7 +4,7 @@ include('../../php/db_config.php');
 $id = $_POST['id'];
 
 
-$sql = "DELETE FROM doctortbl WHERE doctorID= $id";
+$sql = "DELETE FROM usertbl WHERE userID= $id";
 
 if (mysqli_query($conn, $sql)) {
     echo 1;

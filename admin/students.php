@@ -9,12 +9,13 @@ include('../php/db_config.php');
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link rel="shortcut icon" href="components/favicon.png" type="image/x-icon">
+    <link rel="icon" href="components/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
 
-    <title>iConsult | Doctors</title>
+    <title>Letran - Manaoag | Students</title>
     <style>
         .mygradient {
             background-image: linear-gradient(to left bottom, #ffffff, #f1feff, #d3ffff, #c0fff5, #d0ffcb);
@@ -39,9 +40,9 @@ include('../php/db_config.php');
                 <div class="vh-100 py-3">
                     <div class="p-3">
                         <div class="float-end">
-                            <button class="btn btn-sm btn-light border shadow-sm round-1 px-3 fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Doctor <i class="fas fa-user-plus"></i></button>
+                            <button class="btn btn-sm btn-light border shadow-sm round-1 px-3 fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Student <i class="fas fa-user-plus"></i></button>
                         </div>
-                        <div class="h4 mb-0 fw-bold">Doctors</div>
+                        <div class="h4 mb-0 fw-bold">Students</div>
 
                         <div class="row mt-3">
                             <div class="col-md-12">
@@ -49,7 +50,7 @@ include('../php/db_config.php');
                                     <div class="card-body p-4">
                                         <div class="d-flex justify-content-between">
                                             <div class="w-100 me-3">
-                                                <input type="text" class="form-control round-2 mb-3" id="keyword" placeholder="Search doctor">
+                                                <input type="text" class="form-control round-2 mb-3" id="keyword" placeholder="Search Student">
                                             </div>
                                             <div>
                                                 <button class="btn  btn-primary shadow-sm round-2 px-3 " onclick="loadMe()"><i class="fas fa-search"></i></button>
@@ -62,7 +63,7 @@ include('../php/db_config.php');
                                                 <span class="visually-hidden">Loading...</span>
                                             </div>
                                             <div class="h6 mb-0 text-primary">
-                                                loading doctors...
+                                                loading Students...
                                             </div>
                                         </div>
                                         <div id="doctorlists" class="table-responsive">
@@ -86,80 +87,73 @@ include('../php/db_config.php');
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Add Doctor</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Add Student</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="float-end">
-                        <button type="reset" form="doctorform" class="btn btn-sm btn-light shadow-sm">Reset <i class="fas fa-redo"></i></button>
                     </div>
                     <div class="h6 text-muted fst-italic"><i class="fas fa-info-circle"></i> Please fill up all required fields.</div>
                     <hr>
 
                     <form id="doctorform" method="post" action="">
-                        <div class="h6 fw-bold">
-                            Personal Information
-                        </div>
+                        <div class="smallTxt fw-bold">Personal Information</div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <div class="smallTxt">Firstname</div>
+                                        <input type="text" class="form-control mb-2 round-2" name="firstname" id="fname" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="smallTxt">Middlename</div>
+                                        <input type="text" class="form-control mb-2 round-2" name="middlename">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="smallTxt">Lastname</div>
+                                        <input type="text" class="form-control mb-2 round-2" name="lastname" id="lname" required>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="smallTxt">Course</div>
+                                        <input type="text" class="form-control mb-2 round-2" name="course" id="course" required>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="smallTxt">Year</div>
+                                        <input type="text" class="form-control mb-2 round-2" name="year" pattern="[0-9]{0,16}" id="year" required>
+                                    </div>
 
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="smallTxt">Firstname</div>
-                                <input type="text" class="form-control mb-2" name="fname" required>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="smallTxt">Middlename</div>
-                                <input type="text" class="form-control mb-2" name="mname">
-                            </div>
-                            <div class="col-md-4">
-                                <div class="smallTxt">Lastname</div>
-                                <input type="text" class="form-control mb-2" name="lname" required>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="smallTxt">Address</div>
-                                <input type="text" class="form-control mb-2" name="address" required>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="smallTxt">Email</div>
-                                <input type="email" class="form-control mb-2" name="email" required>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="smallTxt">Contact</div>
-                                <input type="text" class="form-control mb-2" name="contact" required>
-                            </div>
 
-                        </div>
-                        <hr>
-                        <div class="h6 fw-bold">Work Information</div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="smallTxt">Doctor License #</div>
-                                <input type="text" class="form-control mb-2" name="license" required>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="smallTxt">Specialization</div>
-                                <select id="" class="form-select mb-2" name="sp" required>
-                                    <option value="">- - -</option>
-                                    <option value="General Practice">General Practice</option>
-                                    <option value="Opthalmologist">Opthalmologist</option>
-                                    <option value="Dermatologist">Dermatologist</option>
-                                </select>
-                            </div>
-                            <div class="col-md-4">
-
-                            </div>
-
-                            <div class="col-md-8">
-
-                            </div>
-                            <div class="col-md-6">
-                                <div class="smallTxt">Hospital/Clinic</div>
-                                <input type="text" class="form-control mb-2" name="hospital" required>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="smallTxt">Address</div>
-                                <input type="text" class="form-control mb-2" name="h_address" required>
-                            </div>
-                        </div>
+                                    <div class="col-md-4">
+                                        <div class="smallTxt">Birthday</div>
+                                        <input type="date" class="form-control mb-2 round-2" name="birthday" id="bd" required>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="smallTxt">Gender</div>
+                                        <select class="form-select round-2 mb-2" name="gender" required>
+                                            <option value="">- - -</option>
+                                            <option value="0">Male</option>
+                                            <option value="1">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                              
+                                <div class="smallTxt fw-bold">Account Information</div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <div class="smallTxt">School ID</div>
+                                        <input type="text" class="form-control mb-2 round-2" name="school_id" pattern="[0-9]{0,16}" id="school_id" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="smallTxt">Username <span class="fw-light fst-italic text-muted">(A-Z,a-z,0-9 | 8+ characters)</span></div>
+                                        <input type="text" class="form-control mb-2 round-2" name="username" minlength="8" pattern="[A-Za-z0-9]{8,16}" id="username" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="smallTxt">Password <span class="fw-light fst-italic text-muted">(A-Z,a-z,0-9 | 8+ characters)</span></div>
+                                        <input type="password" class="form-control mb-2 round-2" name="password" id="password" minlength="8" pattern="[A-Za-z0-9]{8,16}" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="smallTxt">Confirm Password</div>
+                                        <input type="password" class="form-control mb-2 round-2" id="confirm-password" required>
+                                    </div>
+                                </div>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -181,7 +175,7 @@ include('../php/db_config.php');
             $("#loading-text").removeClass("d-none");
             setTimeout(function() {
                 var keyword = $("#keyword").val();
-                $("#doctorlists").load('ajax/loadDoctors.php', {
+                $("#doctorlists").load('ajax2/loadStudent.php', {
                         keyword: keyword
                     },
 
@@ -194,11 +188,11 @@ include('../php/db_config.php');
 
         $("#doctorform").submit(function(e) {
             e.preventDefault();
-            $.post('ajax/addDoctor.php', $("#doctorform").serialize(), function(data) {
+            $.post('ajax2/addStudent.php', $("#doctorform").serialize(), function(data) {
                 if (data == 1) {
                     Swal.fire(
                         'Success!',
-                        'Doctor has been added!',
+                        'Student has been added!',
                         'success'
                     )
                     loadMe();
@@ -220,14 +214,14 @@ include('../php/db_config.php');
                 confirmButtonText: 'Yes, delete it!'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    $.post('ajax/deleteDoctor.php', {
+                    $.post('ajax2/deleteStudent.php', {
                         id: id
                     }, function(data) {
                         if (data == 1) {
                             loadMe();
                             Swal.fire(
                                 'Deleted!',
-                                'Doctor has been deleted.',
+                                'Student has been deleted.',
                                 'success'
                             )
                         }
